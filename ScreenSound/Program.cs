@@ -1,20 +1,11 @@
-﻿using System.ComponentModel;
+﻿Album AlbumDoQueen = new Album();
+AlbumDoQueen.Nome = "A night at the opera";
 
 Musica musica1 = new Musica();
-musica1.Nome = "HeavyDirtySoul";
-musica1.Artista = "Twenty One Pilots";
-musica1.Duracao = 273;
-musica1.Disponivel = true;
-Console.WriteLine(musica1.DescricaoResumida);
-
+musica1.Nome = "Love of My Life";
 
 Musica musica2 = new Musica();
-musica2.Nome = "Vertigo";
-musica2.Artista = "U2";
-musica2.Duracao = 217;
-musica2.Disponivel= false;
+musica1.Nome = "Bohemian Rhapsody";
 
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
-
-
+AlbumDoQueen.AdicionarMusica(musica1);
+AlbumDoQueen.AdicionarMusica(musica2);
